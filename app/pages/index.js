@@ -34,7 +34,7 @@ export default function Home() {
           <a id="regenerate" href="#!">Generate another?</a>
         </p>
         <br />
-        <p>⚠️ This website in any way Safe For Work.</p>
+        <p>⚠️ This website may contain NSFW content.</p>
       </main>
     </div>
   )
