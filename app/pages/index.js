@@ -35,6 +35,9 @@ export default function Home() {
         </p>
         <br />
         <p>⚠️ This website may contain NSFW content.</p>
+        <noscript>
+        <p>⚠️ This website will not work without JavaScript enabled.</p>
+        </noscript>
       </main>
     </div>
   )
