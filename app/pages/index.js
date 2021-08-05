@@ -9,9 +9,9 @@ export default function Home() {
     var regenerate = document.getElementById('regenerate')
     function make () {
       if (navigator.userAgent.includes('Windows NT 6.1')) return title.innerHTML = 'Unsupported OS (Win NT 6.1)'
-      var one = ["Oh you", "Living", "The", "A", "Super", "Working", "Degenerated", "Stinky", "Disgusting", "Broken", "Unwanted", "Horrific", "Biggest", "Mental", "Ugly", "Brainless", "Unresponsive", "Stupid", "Dumb", "Insane", "Unhelpable"]
+      var one = ["Jobless", "Oh you", "Living", "The", "A", "Super", "Working", "Degenerated", "Stinky", "Disgusting", "Broken", "Unwanted", "Horrific", "Biggest", "Mental", "Ugly", "Brainless", "Unresponsive", "Stupid", "Dumb", "Insane", "Unhelpable"]
       var two = ["Shit", "Whale", "Pussy", "Sperm", "Cum", "Useless", "Peace", "Unpaid", "Unexpected", "Shit", "lilGrapeguy", "botato", "Dick", "Bitch", "Chicken", "Smashmaster", "aboutDavid", "Pyxel", "Pyxel", "Bunny", "WasteOfSpace", "Dipshit", "WasteOfSperm", "Snitch", "AR", "Drowning", "Porn", "Horny", "Sheep", "Macedonga", "Breast"]
-      var three = ["Sniffer", "Snatcher", "Variable", "Stripper", "Fucker", "Annoyer", "Depresser", "Worker", "Programmer", "Licker", "Taster", "Eater", "Giver", "Hater", "Toucher", "Breather", "Liver", "Dumbass", "Lawyer", "Addict", "Baby", "Man", "Woman", "Beater", "Brain", "Sucker", "Coward", "Sipper"]
+      var three = ["Virgin", "Sniffer", "Snatcher", "Variable", "Stripper", "Fucker", "Annoyer", "Depresser", "Worker", "Programmer", "Licker", "Taster", "Eater", "Giver", "Hater", "Toucher", "Breather", "Liver", "Dumbass", "Lawyer", "Addict", "Baby", "Man", "Woman", "Beater", "Brain", "Sucker", "Coward", "Sipper"]
       var i = setInterval(()=>{title.innerHTML = `${one[Math.floor(Math.random() * one.length)]} ${two[Math.floor(Math.random() * two.length)]} ${three[Math.floor(Math.random() * three.length)]}`}); setTimeout(()=>{clearInterval(i)},500)
     }
     make()
