@@ -9,8 +9,8 @@ export default function Home() {
     var regenerate = document.getElementById('regenerate')
     function make () {
       var one = ["Oh you", "Living", "The", "A", "Super", "Working", "Degenerated", "Stinky", "Disgusting", "Broken", "Unwanted", "Horrific", "Biggest", "Mental", "Ugly", "Brainless", "Unresponsive", "Stupid", "Dumb", "Insane", "Unhelpable"]
-      var two = ["Useless", "Peace", "Unpaid", "Unexpected", "Shit", "lilGrapeguy", "botato", "Dick", "Bitch", "Chicken", "Smashmaster", "aboutDavid", "Pyxel", "Pyxel", "Bunny", "WasteOfSpace", "Dipshit", "WasteOfSperm", "Snitch", "AR", "Drowning", "Porn", "Horny", "Sheep", "Macedonga", "Breast"]
-      var three = ["Variable", "Stripper", "Fucker", "Annoyer", "Depresser", "Worker", "Programmer", "Licker", "Taster", "Eater", "Giver", "Hater", "Toucher", "Breather", "Liver", "Dumbass", "Lawyer", "Addict", "Baby", "Man", "Woman", "Beater", "Brain", "Sucker", "Coward"]
+      var two = ["Whale", "Pussy", "Sperm", "Cum", "Useless", "Peace", "Unpaid", "Unexpected", "Shit", "lilGrapeguy", "botato", "Dick", "Bitch", "Chicken", "Smashmaster", "aboutDavid", "Pyxel", "Pyxel", "Bunny", "WasteOfSpace", "Dipshit", "WasteOfSperm", "Snitch", "AR", "Drowning", "Porn", "Horny", "Sheep", "Macedonga", "Breast"]
+      var three = ["Variable", "Stripper", "Fucker", "Annoyer", "Depresser", "Worker", "Programmer", "Licker", "Taster", "Eater", "Giver", "Hater", "Toucher", "Breather", "Liver", "Dumbass", "Lawyer", "Addict", "Baby", "Man", "Woman", "Beater", "Brain", "Sucker", "Coward", "Sipper"]
       title.innerHTML = `${one[Math.floor(Math.random() * one.length)]} ${two[Math.floor(Math.random() * two.length)]} ${three[Math.floor(Math.random() * three.length)]}`
     }
     make()
@@ -33,6 +33,8 @@ export default function Home() {
         <p className={styles.description}>
           <a id="regenerate" href="#!">Generate another?</a>
         </p>
+        <br />
+        <p>⚠️ This website in any way Safe For Work.</p>
       </main>
     </div>
   )
