@@ -1,0 +1,36 @@
+Arguments: 
+  /home/gitpod/.nvm/versions/node/v14.17.3/bin/node /home/gitpod/.nvm/versions/node/v14.17.3/bin/yarn add wather69420
+
+PATH: 
+  /home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/.cargo/bin:/workspace/.pip-modules/bin:/workspace/.rvm/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/home/gitpod/.rvm/gems/ruby-2.7.3/bin:/home/gitpod/.rvm/gems/ruby-2.7.3@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.3/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/.cargo/bin:/workspace/.pip-modules/bin:/workspace/.rvm/bin:/ide/bin:/home/gitpod/.pyenv/bin:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/.nvm/versions/node/v14.17.3/bin:/home/gitpod/.cargo/bin:/usr/games:/usr/games:/home/gitpod/.nvm/versions/node/v14.17.3/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v14.17.3/bin:/home/gitpod/.nvm/versions/node/v14.17.3/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/wather69420: Not found
+      at Request.params.callback [as _callback] (/home/gitpod/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/gitpod/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:375:28)
+      at Request.<anonymous> (/home/gitpod/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:375:28)
+      at IncomingMessage.<anonymous> (/home/gitpod/.nvm/versions/node/v14.17.3/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:481:28)
+      at IncomingMessage.emit (events.js:387:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
