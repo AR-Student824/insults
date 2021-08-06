@@ -1,27 +1,29 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect } from 'react'
-import styles from '../styles/Home.module.css'
-import words from './words.json'
+import styles from '../../styles/Home.module.css'
+import Link from "next/link"
+import words from '../words.json'
 const one = words.one 
 const two = words.two
 const three = words.three
-
-export default function Home() {
+export default function Share() { 
   useEffect(() => {
-    var title = document.getElementById('title')
-    var regenerate = document.getElementById('regenerate')
-    var share = document.getElementById('share')
-
-    function make () {
-      if (navigator.userAgent.includes('Windows NT 6.1')) return title.innerHTML = 'Unsupported OS (Win NT 6.1)'
-      var i = setInterval(()=>{title.innerHTML = `${one[Math.floor(Math.random() * one.length)]} ${two[Math.floor(Math.random() * two.length)]} ${three[Math.floor(Math.random() * three.length)]}`;share.href = `/share/${encodeURIComponent(btoa(title.innerHTML))}`}); setTimeout(()=>{clearInterval(i)},500)
+    var x = decodeURIComponent(window.location.href.split('/')[4])
+    var j = setInterval(()=>{title.innerHTML = `${one[Math.floor(Math.random() * one.length)]} ${two[Math.floor(Math.random() * two.length)]} ${three[Math.floor(Math.random() * three.length)]}`});
+     setTimeout(()=>{
+      const title = document.getElementById('title')
+    try {
+      clearInterval(j);
+      // remove harmful 
+      if (x.includes('<') || x.includes('>')) return title.innerHTML = 'Invalid insult'
+      title.innerHTML = atob(x)
+    } catch {
+      clearInterval(j);
+      title.innerHTML = 'Invalid insult'
     }
-    make()
-    regenerate.onclick = function () {
-      make()
-    }
-  },[])
+    }, 500)
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
@@ -35,9 +37,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          <a id="regenerate" href="#!">Generate another?</a>
-          <br />
-          <a id="share" href="#?">Share insult?</a>
+          <Link href="../"><a>Make your own?</a></Link>
         </p>
         <br />
         <p>⚠️ This website may contain NSFW content.</p>
@@ -47,4 +47,5 @@ export default function Home() {
       </main>
     </div>
   )
+
 }
