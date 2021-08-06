@@ -17,7 +17,7 @@ export default function Share() {
       clearInterval(j);
       // remove harmful 
       if (x.includes('<') || x.includes('>')) return title.innerHTML = 'Invalid insult'
-      title.innerHTML = atob(x)
+      title.innerHTML = atob(x) + ' 🖕'
     } catch {
       clearInterval(j);
       title.innerHTML = 'Invalid insult'
@@ -32,6 +32,7 @@ export default function Share() {
       </Head>
 
       <main className={styles.main}>
+        <h3>YOU ARE A...</h3>
         <h1 className={styles.title} id="title">
           ---
         </h1>
